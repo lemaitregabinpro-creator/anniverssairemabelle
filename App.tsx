@@ -31,7 +31,7 @@ export default function App() {
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password.toUpperCase() === 'DEV') {
+    if (password.toLowerCase() === 'aimer') {
       setFade(true);
       setTimeout(() => {
         sessionStorage.setItem('is_authenticated', 'true');
